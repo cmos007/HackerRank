@@ -16,7 +16,7 @@ def calc_slow_sum(n):
 # Loop through some values
 success_count, fail_count = 0, 0
 
-for loop_counter in range(550, 600):
+for loop_counter in range(650, 700):
     # n = r.randint(1,100)
     n = loop_counter
 
@@ -40,7 +40,7 @@ for loop_counter in range(550, 600):
     # print(f's5  = {s5}')
     # print(f's15 = {s15}')
 
-    print(f'line: {loop_counter + 1}, n = {n}, quick sum = {int(s3 + s5 - s15)}, slow sum = {slow_sum}, comparison = {outcome}')
+    print(f'n = {n}, quick sum = {int(s3 + s5 - s15)}, slow sum = {slow_sum}, comparison = {outcome}')
 
 # Report summary statistics ...
 print(f'Success count: {success_count}')
